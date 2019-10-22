@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Container */
+.container {
+    max-width: $screen_lg;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+
+/* Container: Media queries 
+@media (min-width: $screen_sm) {
+    .container { width: 750px; }   
+}
+@media (min-width: $screen_md) {
+    .container { width: 970px; }
+}
+@media (min-width: $screen_lg) {
+    .container { width: 1170px; }
+}
+*/
+

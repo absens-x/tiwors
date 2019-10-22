@@ -1,0 +1,13 @@
+@import 'boot/config';
+
+
+body {
+	font: 16px $font_1;
+	background-color: #F7F5FA;
+	color: $color_dark;
+}
+
+li {
+	list-style: none;
+}
+

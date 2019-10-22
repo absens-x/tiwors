@@ -1,0 +1,72 @@
+@mixin size($n) {
+    width: calc(100% / 12 * $n - 30px);
+}
+
+@mixin size-from($screen, $n) {
+    @media screen and ($screen) {
+        @include size($n);
+    }
+}
+
+
+@mixin icon-mx($pos, $w, $h) {
+    background-position: $pos;
+    width: $w;
+    height: $h;
+}
+
+
+@mixin center-1 {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+@mixin img-response {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@mixin shape($type, $size, $color) {
+    @if $type == "up" {
+        width: 0px;
+        height: 0px;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+    @else if $type == "down" {
+        width: 0px;
+        height: 0px;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    }
+    @else if $type == "left" {
+        width: 0px;
+        height: 0px;
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+    }
+    @else if $type == "right" {
+        width: 0px;
+        height: 0px;
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    }
+}
+
+
+
+@mixin text-select-off {
+    user-select: none;
+}

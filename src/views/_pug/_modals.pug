@@ -1,0 +1,352 @@
+.modals
+	//- .modals__wrap.on
+	.modals__wrap
+		.modals__content
+			.container
+				i.modals__info-bg-icon
+				a(href="/", class="logo icon icon--logo-white hidden-xs")
+				button.btn.btn--modal-close
+
+				//- MENU NAV
+
+				.modal.modal--menu.c-lg-3.c-md-4.c-sm-5
+					.modal__wrap
+						//- h3.modal--title Меню
+						nav
+							ul.modal__nav
+								li
+									a(href="") О нас
+								li
+									a(href="") Как заказать
+								li
+									a(href="") Доставка
+								li
+									a(href="") Новости
+								li
+									a(href="") Контакты
+
+				//- SIGN UP
+
+				.modal.modal--sign-up.c-lg-3.c-md-4.c-sm-5
+					.modal__wrap
+						h3.modal--title Регистрация
+
+						form
+							p Ваше имя
+							span.field.field-text--for-modal
+								input(type="text")
+							p Телефон
+							span.field.field-text--for-modal
+								input(type="text")
+							p Email
+							span.field.field-text--for-modal
+								input(type="text")
+							p Пароль
+							span.field.field-text--for-modal
+								input(type="text")
+							p Повторите пароль
+							span.field.field-text--for-modal
+								input(type="text")
+							p.modal__imagree Я согласен с 
+								a(href="") условиями использования
+							button.btn.btn--modal-submit Отправить
+
+				//- LOGIN
+
+				.modal.modal--login.c-lg-3.c-md-4.c-sm-5
+					.modal__wrap
+						h3.modal--title Авторизация
+
+						form
+							p Логин или email
+							span.field.field-text--for-modal
+								input(type="text")
+							p Пароль
+							span.field.field-text--for-modal
+								input(type="text")
+							
+							button.btn.btn--modal-submit-login Войти
+
+							a(href="", class="modal__forget-passwd") Забыли пароль?
+							hr
+
+						.social-login
+							p Войти с помощью соцсетей
+							ul
+								li
+									a.link.link--login-vk
+								li
+									a.link.link--login-fb
+								li
+									a.link.link--login-gg
+							p или
+							button.btn.btn--sign-up-2.js--modal-sign-up Присоединиться
+
+
+				//- CITIES
+
+				.modal.modal--cities.c-lg-8.c-md-8
+					.modal__wrap
+						h3.modal--title Список доступных городов
+						
+						span.field.field-text--search-city
+							input(type="text", placeholder="Поиск города")
+							button.icon.icon--search-y
+
+						ul.cities-list
+							li.city-item.c-lg-2.c-md-3.c-sm-3.c-xs-6
+								span.first-word А
+								ul
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+							li.city-item.c-lg-2.c-md-3.c-sm-3.c-xs-6
+								span.first-word А
+								ul
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+							li.city-item.c-lg-2.c-md-3.c-sm-3.c-xs-6
+								span.first-word А
+								ul
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+							li.city-item.c-lg-2.c-md-3.c-sm-3.c-xs-6
+								span.first-word А
+								ul
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+									li
+										a(href="") Астрахань
+
+							
+				//- org INFO
+
+				.modal.modal--org-info.c-lg-5.c-md-8
+					.modal__wrap
+						h3.modal--title О ресторане
+							span "Ташир Пицца"
+
+						p.org-info__about   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aut porro possimus veritatis unde placeat. Doloremque rerum nam dolores praesentium amet aut officia illum modi consequatur voluptates deserunt hic dolorum ducimus, porro odio pariatur sint dolor natus obcaecati vel ea.
+
+						ul
+							li Специализация: 
+								span Пицца, Суши, Бургеры
+							li Время работы:
+								span 09:00 - 22:00
+							li Рабочие дни:
+								span Без выходных
+							li Юридическая информация:
+								span ООО "Рестранс", ИНН 7730594310, ОГРН 5087746615028, 127550, г. Москва, ул. Прянишникова, дом. 23А
+						.org-info__map
+							.map-display
+							a(href="", class="link link--open-map") Открыть карту
+
+				//- org REVIEWS
+				
+				.modal.modal--org-reviews.c-lg-8.c-md-8
+					.modal__wrap
+						h3.modal--title Отзывы о заведении
+						
+						button.js--carousel-slick.prev.btn.btn--triangle-up
+						.decorative--layer__review-shadow
+						ul.carousel--org-reviews
+							li.item
+								.user-pic
+									img(src="/img/ava.png")
+								.review
+									span.name Ислам
+									p.comment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nobis?
+									span.date 12 декабря, 22:09
+								.rate
+									ul.icon--rate.icon--rate-1-5
+										li
+										li
+										li
+										li
+										li
+							li.item
+								.user-pic
+									img(src="/img/ava.png")
+								.review
+									span.name Ислам
+									p.comment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nobis?
+									span.date 12 декабря, 22:09
+								.rate
+									ul.icon--rate.icon--rate-1-5
+										li
+										li
+										li
+										li
+										li
+							li.item
+								.user-pic
+									img(src="/img/ava.png")
+								.review
+									span.name Ислам
+									p.comment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nobis?
+									span.date 12 декабря, 22:09
+								.rate
+									ul.icon--rate.icon--rate-1-5
+										li
+										li
+										li
+										li
+										li
+							li.item
+								.user-pic
+									img(src="/img/ava.png")
+								.review
+									span.name Ислам
+									p.comment  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, nobis?
+									span.date 12 декабря, 22:09
+								.rate
+									ul.icon--rate.icon--rate-1-5
+										li
+										li
+										li
+										li
+										li
+
+						.decorative--layer__review-shadow.sh-down
+						button.js--carousel-slick.next.btn.btn--triangle-down
+
+				//- PROFILE ADD CARD
+
+				.modal.modal--user-add-card.c-lg-3.c-md-4
+					.modal__wrap
+						h3.modal--title Кредитная карта
+
+						form
+							p Номер карты
+							span.field.field-text--profile
+								input(type="text")
+
+							p Имя владельца (латин.)
+							span.field.field-text--profile
+								input(type="text")
+
+							p CVC (Последние 3 цифры на полосе подписи) владельца
+							span.field.field-text--profile
+								input(type="text")
+							
+							p Срок действия карты
+							.inline-fields
+								span.field.field-text--profile
+									input(type="text")
+								i /
+								span.field.field-text--profile
+									input(type="text")
+
+							
+							button.btn.btn--modal-submit Отправить
+							i.icon.icon--brands-visa-mastercard
+
+				//- PROFILE ORDER DETAIL
+
+				.modal.modal--user-order-detail.c-lg-3.c-md-4
+					.modal__wrap
+						h3.modal--title Детали заказа
+						ul.details-list
+							li Ресторан:
+								span Ахтамар
+							li ID заказа:
+								span 1312341
+							li Дата:
+								span 12.04.17, 15:00
+							li Сумма:
+								span 1200 руб.
+							li Стоимотсть доставки:
+								span 300 руб.
+							li Адрес:
+								span Ингушетия, г. Назрань, ул. Картоева 25
+							li Контактный телефон:
+								span +78003234411
+						
+
+
+//- ONLY MOBILE MODALS
+
+.modals-mb.hidden-lg.hidden-md
+	//- .modals-mb__wrap.on
+	.modals-mb__wrap
+		.modals-mb__content
+			button.btn.btn--modal-mb-close
+			
+			//- MENU
+			.modal-mb.modal-mb--menu
+
+				//- button.btn.btn--login Вход
+				.modal-mb__login-user
+					
+					a(href="", class="js--open-user-nav")
+						i
+							img(src="img/ava.png")
+						span Yusuf Gam
+					a(href="", class="btn btn--user-message-w")
+				hr
+				.modal-mb__city-select
+					span Ваш город
+					a(href="", class="btn btn--city-selector js--open-city-list") Назрань
+
+				.modal-mb__food-search
+					span.field.field-text--search-food-1
+						input(type="text", placeholder="Поиск блюд")
+
+				ul.modal-mb__nav
+					li
+						a(href="") О нас
+					li
+						a(href="") Как заказать
+					li
+						a(href="") Доставка
+					li
+						a(href="") Новости
+					li
+						a(href="") Контакты
+
+			
+			//- FILTERS
+			.modal-mb.on.modal-mb--org-filters
+				.modal-mb__wrap
+					button.btn.btn--filter-apply Применить
+			
+			//- MENU LIST
+			.modal-mb.modal-mb--menulist
+				.modal-mb__wrap
+				
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+.btn {
+	display: inline-block;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	@include text-select-off;
+
+
+	 
+}

@@ -1,0 +1,28 @@
+header.header
+	div.header__wrap
+		.container
+			.header__nav-mb.hidden-md.hidden-lg
+				a(href="", class="btn btn--nav-mb")
+				a(href="", class="btn btn--nav-cart-mb")
+			.header__logo.c-lg-2.c-md-2.c-sm-12.c-xs-12
+				a(href="/")
+					img(src="img/svg/logo.svg", alt="logo")
+
+			.header__city-select.c-lg-4.c-md-4.c-sm-4.hidden-sm.hidden-xs
+				span Ваш город
+					a(href="", class="btn btn--city-selector js--modal-city-list") Назрань
+
+			.c-to-right.c-lg-6.c-md-6.c-xs-6
+				.header__food-search.c-lg-4.c-md-4.hidden-sm.hidden-xs
+					span.field.field-text--search-food-1
+						input(type="text", placeholder="Поиск блюд")
+				.header__nav
+					a(href="", class="btn js--modal--menu btn--nav hidden-sm hidden-xs")
+				.header__login.hidden-sm.hidden-xs
+					button.btn.btn--login.js--modal--login Вход
+					//- div(class="header__login-user")
+						a(href="", class="btn btn--user-notification")
+						a(href="", class="js--open-user-nav")
+							span Yusuf Gam
+							i
+								img(src="img/ava.png")
