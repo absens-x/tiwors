@@ -34,6 +34,7 @@
 }
 
 
+
 @mixin shape($type, $size, $color) {
     @if $type == "up" {
         width: 0px;

@@ -7,6 +7,8 @@
 	@include text-select-off;
 
 
+
+ 
 	&.btn--def {
 		width: 172px;
 		border: 1px solid $color_dark;
@@ -14,6 +16,44 @@
 		text-transform: uppercase;
 		padding: 10px;
 		border-radius: 30px;
+	}
+
+	
+
+
+	
+
+	&.btn--hamburger {
+		width: 20px;
+		height: 14px;
+		padding: 0;
+		
+
+		&:hover span {
+			width: 100%;
+		}
+
+		span {
+			display: block;
+			height: 1px;
+			margin: 5px auto;
+			width: 50%;
+			background-color: $color_dark;
+			transition: 0.3s width ease-in-out;
+		}
+
+		&:after {
+			display: block;
+			content: "";
+			background-color: $color_dark;
+			height: 1px;
+		}
+		&:before {
+			display: block;
+			content: "";
+			background-color: $color_dark;
+			height: 1px;
+		}
 	}
 	 
 }
