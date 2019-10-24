@@ -1,3 +1,13 @@
-.bg-primary {
-    
+.bg--1 {
+    background-color: $color_orange;
+    color: #fff;
+}
+
+.bg--2 {
+    background-color: $color_blue;
+    color: #fff;
+}
+
+.bg--gdnt-1 {
+    background: linear-gradient(101.82deg, #E65D1A 0%, #FA280B 100%);
 }
