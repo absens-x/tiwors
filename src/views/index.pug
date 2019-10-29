@@ -35,11 +35,12 @@ html(lang="en")
 			main.content
 				section.about-section
 					.container
-						h2.heading.heading--main <span>Кто мы</span>
+						h2.heading.heading--primary <span>Кто мы</span>
 						.logo.logo--origin
 							img(src="img/svg/logo-full.svg")
 						.about-section__desc
 							p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы.. Хотя само их существование приносит несомненную пользу обществу
+				
 				section.advantages-section
 					.container
 						.advantages-section__items-list
@@ -64,7 +65,7 @@ html(lang="en")
 				
 				section.portfolio-section
 					.container
-						h2.heading.heading--main <span>Наши работы</span>
+						h2.heading.heading--primary <span>Наши работы</span>
 						
 						.portfolio-section__items-list
 							.row
@@ -92,9 +93,12 @@ html(lang="en")
 									a(href="#")
 										img(src="img/work3.jpg", alt="")
 										p Hedi
-						a(href="#") Другие проекты
-							 
-						
+						a( class="link link--def" href="#") Другие проекты
+
+				section.brief-section
+					.container
+						h3.heading.heading--secondary Готовы обсудить проект?
+						a( class="btn btn--def bg--gdnt-1" href="#") <span>Оставить заявку</span>
 
 		
 				
@@ -102,6 +106,32 @@ html(lang="en")
 		
 		
 
+		footer.footer
+			.container
+				.footer__wrap
+					.footer__decorate-layer
+						include ../img/svg/decorate-shape-shadow.svg
+					nav.footer__nav
+						ul.row.items-list
+							li
+								a(href="#") Портфолио
+							li
+								a(href="#") О нас
+							li
+								a(href="#") Услуги
+							li
+								a(href="#") Контакты
+					.footer__social-links
+						ul
+							li
+								a(href="#")
+							li
+								a(href="#")
+							li
+								a(href="#")
+							li
+								a(href="#")
+					p.footer__copyright &copy; 2019 <span>Tiwors</span>. Студия Креатива.
 
 
 

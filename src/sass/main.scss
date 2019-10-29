@@ -83,6 +83,67 @@ ul {
 }
 
 
+.footer {
+	margin-top: 84px;
+	background-color: #fdfdfd;
+
+	.footer__wrap {
+		overflow: hidden;
+		// border: 1px solid red;
+	}
+
+	.footer__decorate-layer {
+		margin-top: -40px;
+		margin-bottom: -42px;
+		text-align: center;
+	}
+
+	.items-list {
+		justify-content: center;
+		margin-top: 42px;
+
+		li {
+			margin: 0 20px;
+		}
+
+		li a {
+			text-decoration: none;
+			font: 14px $font_2;
+			color: inherit;
+			font-style: normal;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: 0.3s;
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.footer__social-links {
+		height: 32px;
+		margin: 42px auto 56px auto;
+		width: 30%;
+		border: 1px solid red;
+	}
+
+	.footer__copyright {
+		font-size: 14px;
+		text-align: center;
+		border-top: 1px solid rgba(50, 54, 60, 0.15);
+		margin: 0;
+		color: rgba(50, 54, 60, 0.5);
+		font-style: normal;
+		font-weight: 500;
+		padding: 18px 0;
+
+		span {
+			color: rgba(50, 54, 60, 0.8);
+		}
+	}
+}
+
 .opening {
 
 	.opening__wrap {
@@ -156,6 +217,13 @@ ul {
 }
 
 .portfolio-section {
+
+	.link--def {
+		display: block;
+		text-align: center;
+	}
+
+
 	.portfolio-section__item {
 		width: size(4);
 		margin: 0 15px;
@@ -164,8 +232,8 @@ ul {
 		a {
 			position: relative;
 			display: block;
-			
 			text-decoration: none;
+			box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.15);
 			
 
 			&:before {
@@ -213,4 +281,10 @@ ul {
 			@include img-responsive;
 		}
 	}
+}
+
+
+.brief-section {
+	text-align: center;
+	margin-top: 56px;
 }

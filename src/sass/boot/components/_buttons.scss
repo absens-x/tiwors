@@ -4,6 +4,7 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
+	color: inherit;
 	font: 12px $font_2;
 	font-weight: 500;
 	@include text-select-off;
