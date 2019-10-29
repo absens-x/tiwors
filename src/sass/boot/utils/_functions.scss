@@ -1,5 +1,5 @@
-@function size($n) {
-    @return calc(100% / 12 * $n - 30px);
+@function size($cols) {
+    @return calc(100% / 12 * #{$cols} - 30px);
 }
 
  

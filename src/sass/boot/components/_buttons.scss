@@ -63,11 +63,12 @@
 	&.btn--hamburger {
 		width: 20px;
 		height: 14px;
-		padding: 0;
+		padding: 1px 0;
 		
 
 		&:hover span {
 			width: 100%;
+			background-color: $color_orange;
 		}
 
 		span {
