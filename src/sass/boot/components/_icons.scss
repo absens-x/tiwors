@@ -1,24 +1,34 @@
 .icon {
 	display: inline-block;
-	background-color: transparent;
 	border: none;
-	background-image: url($sprite_path);
-	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
 
-	&:focus {
-	    border: none;
-	    outline: none;
-  	}
+	&.icon--social-vk {
+		width: 19px;
+		height: 11px;
+		fill: $color_orange;
+		transition: 0.3s;
+	}
 
+	&.icon--social-ig {
+		width: 14px;
+		height: 14px;
+		fill: $color_orange;
+		transition: 0.3s;
+	}
 
-  	&.icon--plus {
-  		@include icon-mx(-72px 0, 14px, 14px)
+	&.icon--social-tg {
+		width: 16px;
+		height: 14px;
+		fill: $color_orange;
+		transition: 0.3s;
+	}
 
-  	}
-
-  	&.icon--pouch {
-  		@include icon-mx(0 0, 54px, 54px);
-  	}
+	&.icon--social-fb {
+		width: 14px;
+		height: 14px;
+		fill: $color_orange;
+		transition: 0.3s;
+	}
 }

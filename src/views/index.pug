@@ -1,7 +1,10 @@
 html(lang="en")
-
-	include _pug/_head_conf.pug
+	include boot/utils/mixins.pug
+	include boot/layouts/_head_conf.pug
 	body
+		include boot/layouts/_svg_map.pug
+		
+		
 		header.header
 			.header__wrap
 				.container
@@ -11,7 +14,7 @@ html(lang="en")
 							img(src="img/svg/logo-icon.svg", alt="tiwors")
 						.header__right
 							p.header__phone-number <i></i><span>8(906) 777-66-06</span>
-							button.btn.btn--primary.bg--gd-orange Оставить заявку
+							button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
 		
 
 		//- PAGE HOME
@@ -98,7 +101,7 @@ html(lang="en")
 				section.brief-section
 					.container
 						h3.heading.heading--secondary Готовы обсудить проект?
-						a( class="link link--def bg--gdnt-1" href="#") Оставить заявку
+						button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
 
 		
 				
@@ -122,15 +125,20 @@ html(lang="en")
 							li
 								a(href="#") Контакты
 					.footer__social-links
-						ul
+						ul.row
 							li
-								a(href="#")
+								a(href="#" class="link link--social-item")
+									+svg("", "icon_social-vk")(class="icon icon--social-vk")
 							li
-								a(href="#")
+								a(href="#" class="link link--social-item")
+									+svg("", "icon_social-ig")(class="icon icon--social-ig")
 							li
-								a(href="#")
+								a(href="#" class="link link--social-item")
+									+svg("", "icon_social-tg")(class="icon icon--social-tg")
 							li
-								a(href="#")
+								a(href="#" class="link link--social-item")
+									+svg("", "icon_social-fb")(class="icon icon--social-fb")
+
 					p.footer__copyright &copy; 2019 <span>Tiwors</span>. Студия Креатива.
 
 

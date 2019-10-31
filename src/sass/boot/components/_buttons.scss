@@ -21,10 +21,15 @@
 		height: 36px;
 		border-radius: 30px;
 		overflow: hidden;
-		transition: 0.3s ease-in-out;
+		transition: 0.2s ease-in-out;
 		
+		span {
+			@include center-1;
+			top: 10px;
+			z-index: 1;
+		}
+
 		&:after {
-	 
 			content: "";
 			display: block;
 			width: 100%;
@@ -56,37 +61,34 @@
 	
 
 	&.btn--hamburger {
-		width: 20px;
+		width: 26px;
 		height: 14px;
 		padding: 1px 0;
+		opacity: 0.8;
 		
 
 		&:hover span {
 			width: 100%;
 			background-color: $color_orange;
+			transform: rotate(90deg);
 		}
 
 		span {
 			display: block;
-			height: 1px;
+			height: 2px;
 			margin: 5px auto;
 			width: 50%;
 			background-color: $color_dark;
-			transition: 0.3s width ease-in-out;
+			transition: 0.3s ease-in-out;
 		}
 
-		&:after {
+		&:after, &:before {
 			display: block;
 			content: "";
 			background-color: $color_dark;
-			height: 1px;
+			height: 2px;
 		}
-		&:before {
-			display: block;
-			content: "";
-			background-color: $color_dark;
-			height: 1px;
-		}
+	 
 	}
 	 
 }

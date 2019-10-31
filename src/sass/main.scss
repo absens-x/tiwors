@@ -25,6 +25,7 @@ ul {
 		top: 0;
 		width: 100%;
 		z-index: 1000;
+		background: rgba(255, 255, 255, 0.95);
 	}
 
 	.header__inner {
@@ -32,7 +33,7 @@ ul {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: rgba(255, 255, 255, 0.95);
+		
 		height: 84px;
 		// outline: 1px solid red;
 	}
@@ -125,7 +126,15 @@ ul {
 		height: 32px;
 		margin: 42px auto 56px auto;
 		width: 30%;
-		border: 1px solid red;
+		// border: 1px solid red;
+
+		ul {
+			justify-content: center;
+
+			li {
+				margin: 0 10px;
+			}
+		}
 	}
 
 	.footer__copyright {
@@ -245,7 +254,7 @@ ul {
 				content: "";
 				width: 0;
 				height: 100%;
-				background: linear-gradient(135.08deg, #4F83CB 0%, rgba(79, 131, 203, 0.3) 100%);
+				background: rgba(50, 54, 60, 0.95);
 				z-index: 0;
 				transition: 0.4s  ease-in-out;
 			}
@@ -254,10 +263,9 @@ ul {
 				position: absolute;
 				top: 45%;
 				opacity: 0;
-				font: 16px $font_2;
 				font-style: normal;
-				font-weight: bold;
-				letter-spacing: 0.1em;
+				font-weight: normal;
+				letter-spacing: 0.2em;
 				width: 100%;
 				text-align: center;
 				z-index: 1;
