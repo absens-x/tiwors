@@ -1,9 +1,9 @@
-<svg width="1207" height="70" viewBox="0 0 1207 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
+<svg preserveAspectRatio="none" viewBox="0 0 1207 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter_decorate_shadow)">
 <path d="M603.5 2L16 40H1191L603.5 2Z" fill="#D55959"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0" y="0" width="1207" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter_decorate_shadow" x="0" y="0" width="1207" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="14"/>

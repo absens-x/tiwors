@@ -3,45 +3,43 @@ html(lang="en")
 	include boot/layouts/_head_conf.pug
 	body
 		include boot/layouts/_svg_map.pug
-		
-		
-		header.header
-			.header__wrap
-				.container
-					.header__inner
-						button.btn.btn--hamburger <span></span>
-						a.header__logo
-							img(src="img/svg/logo-icon.svg", alt="tiwors")
-						.header__right
-							p.header__phone-number <i></i><span>8(906) 777-66-06</span>
-							button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
+		include boot/layouts/_header.pug
 		
 
-		//- PAGE HOME
+		//- HOME PAGE
 		.page.page--home
 
-			.opening
-				.opening__wrap
-					.container
-						.opening__inner
-							.opening__slider
-								ul.slider__items-list
-									li.slider__item
-										.slider__animation-box
-											div
-												//- +svg("", "icon_opening-1")(class=" ")
-												+svg("", "icon_opening-text-1")(class=" ")
-												//- include ../img/svg/icon-opening-1.svg
-												//- include ../img/svg/icon-opening-text-1.svg
-											div
-											div
-										.slider__slogan
-											p Готовые решения для <span>вашего бизнеса<span/>!
-								//- ul.slider__controls
-									li
-										button .
-
 			main.content
+
+				//- --------------------------------------------------------------
+				section.opening-section
+					.opening-section__wrap
+						.container
+							.opening-section__inner
+								.opening-section__slider
+									
+									ul.slider__items-list
+										li.slider__item
+											.slider__animation-box
+												div.animation-box__layer-1
+													+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
+												div.animation-box__layer-2
+													+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
+												div.animation-box__layer-3
+													i
+														+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
+											.slider__slogan
+												p Готовые решения для <span>вашего бизнеса<span/>!
+									
+									ul.slider__controls.row
+										li.on
+											button.btn.btn--slider-control <i></i>
+										li
+											button.btn.btn--slider-control <i></i><i></i>
+										li
+											button.btn.btn--slider-control <i></i><i></i><i></i>
+				
+				//- --------------------------------------------------------------
 				section.about-section
 					.container
 						h2.heading.heading--primary <span>Кто мы</span>
@@ -50,6 +48,8 @@ html(lang="en")
 						.about-section__desc
 							p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы.. Хотя само их существование приносит несомненную пользу обществу
 				
+				
+				//- --------------------------------------------------------------
 				section.advantages-section
 					.container
 						.advantages-section__items-list
@@ -58,20 +58,21 @@ html(lang="en")
 									.icon.icon--adv-1
 										img(src="img/svg/icon-adv-1.svg", alt="")
 									p.advantages-section__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--adv Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
 											
 								.advantages-section__item
 									.icon.icon--adv-1
 										img(src="img/svg/icon-adv-1.svg", alt="")
 									p.advantages-section__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--adv Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
 											
 								.advantages-section__item
 									.icon.icon--adv-1
 										img(src="img/svg/icon-adv-1.svg", alt="")
 									p.advantages-section__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--adv Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
 				
+				//- --------------------------------------------------------------
 				section.portfolio-section
 					.container
 						h2.heading.heading--primary <span>Наши работы</span>
@@ -102,45 +103,16 @@ html(lang="en")
 									a(href="#")
 										img(src="img/work3.jpg", alt="")
 										p Hedi
-						a( class="link link--def" href="#") Другие проекты
+							a( class="link link--def" href="#") Другие проекты
 
+				//- --------------------------------------------------------------
 				section.brief-section
 					.container
 						h3.heading.heading--secondary Готовы обсудить проект?
 						button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
 		
-
-		footer.footer
-			.container
-				.footer__wrap
-					.footer__decorate-layer
-						include ../img/svg/decorate-shape-shadow.svg
-					nav.footer__nav
-						ul.row.items-list
-							li
-								a(href="#") Портфолио
-							li
-								a(href="#") О нас
-							li
-								a(href="#") Услуги
-							li
-								a(href="#") Контакты
-					.footer__social-links
-						ul.row
-							li
-								a(href="#" class="link link--social-item")
-									+svg("", "icon_social-vk")(class="icon icon--social-vk")
-							li
-								a(href="#" class="link link--social-item")
-									+svg("", "icon_social-ig")(class="icon icon--social-ig")
-							li
-								a(href="#" class="link link--social-item")
-									+svg("", "icon_social-tg")(class="icon icon--social-tg")
-							li
-								a(href="#" class="link link--social-item")
-									+svg("", "icon_social-fb")(class="icon icon--social-fb")
-
-					p.footer__copyright &copy; 2019 <span>Tiwors</span>. Студия Креатива.
+		include boot/layouts/_footer.pug
+		
 
 
 

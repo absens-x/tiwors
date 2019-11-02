@@ -1,0 +1,19 @@
+.layer {
+
+
+    &.layer--decorate-shadow {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        height: 70px;
+        width: 100%;
+
+        svg {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+

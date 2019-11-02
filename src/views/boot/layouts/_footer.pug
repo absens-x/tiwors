@@ -1,108 +1,32 @@
 footer.footer
-	.footer__nav
-		.container
-			ul.hidden-sm.hidden-xs
-				li
-					a(href="") О проекте
-				li
-					a(href="") Как заказать
-				li
-					a(href="") Доставка
-				li
-					a(href="") Акции
-				li
-					a(href="") Новости
-				li
-					a(href="") Контакты
-			button.btn.btn--sign-up.js--modal-sign-up Зарегистрироваться
+	.container
+		.footer__wrap
+			.footer__decorate-layer
+				+svg("", "layer_decorate-shadow")(class="layer layer--decorate-shadow" preserveAspectRatio="xMinYMin meet")
+				
+			nav.footer__nav
+				ul.row.items-list
+					li
+						a(href="#") Портфолио
+					li
+						a(href="#") О нас
+					li
+						a(href="#") Услуги
+					li
+						a(href="#") Контакты
+			.footer__social-links
+				ul.row
+					li
+						a(href="#" class="link link--social-item")
+							+svg("", "icon_social-vk")(class="icon icon--svg-social-vk")
+					li
+						a(href="#" class="link link--social-item")
+							+svg("", "icon_social-ig")(class="icon icon--svg-social-ig")
+					li
+						a(href="#" class="link link--social-item")
+							+svg("", "icon_social-tg")(class="icon icon--svg-social-tg")
+					li
+						a(href="#" class="link link--social-item")
+							+svg("", "icon_social-fb")(class="icon icon--svg-social-fb")
 
-	.footer__meals-nav
-		.container
-			.about-project.c-lg-5.c-md-5
-				span.icon.icon--logo-2
-				p Проект созданный с целью осуществить доступ к халяльной продукции, где бы вы не находились наш проект постепенно развиваeтся пополняя списки городов.
-			.meals-links.c-lg-7.c-md-7.c-sm-12.c-xs-12
-				ul
-					li
-						a(href="", title="Пицца")
-					li
-						a(href="", title="Бургеры")
-					li
-						a(href="", title="Шашлыки")
-					li
-						a(href="", title="Гриль")
-					li
-						a(href="", title="Гарниры")
-					li
-						a(href="", title="Салаты")
-					li
-						a(href="", title="Шаурма")
-					li
-						a(href="", title="Суши")
-			.clearfix
-
-	.footer__other-links
-		.container
-			.city-links.c-lg-3.c-md-3.hidden-sm.hidden-xs
-				h6 Города
-				ul
-					li 
-						a(href="") Москва
-					li 
-						a(href="") Назрань
-					li 
-						a(href="") Грозный
-					li 
-						a(href="") Нальчик
-				ul
-					li 
-						a(href="") Москва
-					li 
-						a(href="") Назрань
-					li 
-						a(href="") Грозный
-					li 
-						a(href="") Нальчик
-				ul
-					li 
-						a(href="") Москва
-					li 
-						a(href="") Назрань
-					li 
-						a(href="") Грозный
-					li 
-						a(href="") Нальчик
-			.dec-vertical-line.c-lg-1.c-md-1
-				hr.hidden-sm.hidden-xs
-			.apps-links.c-lg-3.c-md-3.hidden-sm.hidden-xs
-				h6 Приложение
-				p Скачайте приложение для вашего смартфона
-				a(href="", class="link link--appstore-2")
-				a(href="", class="link link--googleplay-2")
-			.dec-vertical-line.c-lg-1.c-md-1
-				hr.hidden-sm.hidden-xs
-			.partnership.c-lg-4.c-md-4
-				h6 Сотрудничество
-				p Уже сейчас вы можете присоединиться к нашему клубу, просто оставьте нам заявку и мы с вами свяжемся
-				a(href="", class="link link--become-partner") Стать партнером
-			.clearfix
-	
-	.footer__copyright
-		.container
-			.cp-block.c-lg-4.c-md-4.c-sm-4.c-xs-12
-				p &copy; 2017 «HalalClub». Все права защищены
-			.cp-block.c-lg-4.c-md-4.c-sm-4.c-xs-12
-				p тел:  <a href="">8(800) 006-55-33</a> <span>|</span> email:  <a href="">info@halalclub.com</a>
-			.cp-block.c-lg-4.c-md-4.c-sm-4.c-xs-12
-				ul
-					li
-						a(href="", title="ВКонтакте")
-					li
-						a(href="", title="Facebook")
-					li
-						a(href="", title="Instagram")
-					li
-						a(href="", title="Twitter")
-					li
-						a(href="", title="Google+")
-		.clearfix
+			p.footer__copyright &copy; 2019 <span>Tiwors</span>. Студия Креатива.

@@ -1,8 +1,26 @@
 .link {
 
     &.link--def {
-        color: rgba(50, 54, 60, 0.8);
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        color: rgba($color: $color_dark, $alpha: 0.8);;
         font-size: 22px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 14px;
+            left: -14px;
+            top: 0;
+            background-color: rgba($color: #fff, $alpha: 0.3);
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover:after {
+            left: 120%;
+        }
     }
 
 

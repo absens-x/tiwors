@@ -1,34 +1,67 @@
+.svg-icons-list {
+	width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
 .icon {
 	display: inline-block;
 	border: none;
 	margin: 0;
 	padding: 0;
 
-	&.icon--social-vk {
+
+	&.icon--svg-opening-1 {
+		width: 177px;
+		height: 154px;
+		transform: rotate(0deg);
+		transform-origin: left bottom;
+		transition: 0.3s;
+	}
+	
+	&.icon--svg-opening-f-text-1 {
+		width: 221px;
+		height: 39px;
+		
+	}
+
+	&.icon--svg-opening-b-text-1 {
+		width: 650px;
+		height: 137px;
+	}
+
+
+	// SOCIAL ICONS
+
+	&.icon--svg-social-vk {
 		width: 19px;
 		height: 11px;
 		fill: $color_orange;
 		transition: 0.3s;
 	}
 
-	&.icon--social-ig {
+	&.icon--svg-social-ig {
 		width: 14px;
 		height: 14px;
 		fill: $color_orange;
 		transition: 0.3s;
 	}
 
-	&.icon--social-tg {
+	&.icon--svg-social-tg {
 		width: 16px;
 		height: 14px;
 		fill: $color_orange;
 		transition: 0.3s;
 	}
 
-	&.icon--social-fb {
+	&.icon--svg-social-fb {
 		width: 14px;
 		height: 14px;
 		fill: $color_orange;
 		transition: 0.3s;
 	}
+
+
+
 }
