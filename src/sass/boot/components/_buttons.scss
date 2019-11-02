@@ -62,17 +62,19 @@
 
 	&.btn--hamburger {
 		width: 26px;
-		height: 14px;
+		height: 18px;
 		padding: 1px 0;
+		overflow: hidden;
 		opacity: 0.8;
 		
 
 		&:hover span {
 			width: 100%;
 			background-color: $color_orange;
-			transform: rotate(90deg);
+		 
 		}
 
+	 
 		span {
 			display: block;
 			height: 2px;
