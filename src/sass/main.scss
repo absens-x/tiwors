@@ -16,6 +16,30 @@ ul {
 	margin: 0;
 }
 
+.entity-is-active {
+	display: block !important;
+}
+
+
+.content {
+	min-height: 720px;
+	margin-top: 84px;
+	overflow: hidden;
+}
+
+
+// ---------------------------------
+// PAGE HOME
+// ---------------------------------
+
+
+
+// *******
+
+.page--home .content {
+	margin-top: 0;
+}
+
 .opening-section {
 
 	.opening-section__wrap {
@@ -33,9 +57,17 @@ ul {
 		margin-top: 84px * 2;
 	}
 
+	.slider__item {
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
 	.slider__animation-box {
 		position: relative;
 		min-height: 170px;
+		overflow: hidden;
 	}
 
 	.animation-box__layer-1, .animation-box__layer-2, .animation-box__layer-3 {
@@ -75,6 +107,7 @@ ul {
 		font-size: 34px;
 		letter-spacing: 0.05em;
 		margin-top: 84px;
+		padding: 0 15px;
 		p {margin: 0;}
 
 		span {
@@ -84,8 +117,16 @@ ul {
 
 
 	.slider__controls {
-		margin-top: 84+56px;
+		// margin-top: 84+56px;
+		width: 80%;
 		justify-content: center;
+		position: absolute;
+		bottom: 84px;
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		
 		
 		li {
 			margin: 0 15px;
@@ -100,6 +141,19 @@ ul {
 			border-radius: 50px;
 			opacity: 0.9;
 			overflow: hidden;
+			transition: 0.3s;
+
+			&:hover {
+				transform: rotate(180deg);
+				background: $color_blue_1 !important;
+				border-color: $color_blue_1;
+
+				i {
+					background-color: #fff;
+				}
+
+				 
+			}
 
 			i {
 				position: absolute;
@@ -170,8 +224,58 @@ ul {
 			i {background-color: #fff;}
 		}
 	}
+
+
+	@media screen and (max-width: $screen_md) {
+		.opening-section__slider {
+			margin-top: 298px;
+		}
+	}
+
+	@media screen and (max-width: $screen_sm) {
+		.opening-section__slider {
+			margin-top: 84+28px;
+		}
+
+		
+		.animation-box__layer-1, .animation-box__layer-2, .animation-box__layer-3 {
+		 
+			transform: scale(0.8);
+		}
+		.animation-box__layer-1 {
+			left: -20%;
+		}
+
+		.slider__slogan {
+			font-size: 1.5rem;
+			margin-top: 56px;
+		}
+
+		.slider__controls {
+			bottom: 56px;
+		}
+	}
+
+	
+	@media screen and (max-width: $screen_xs) {
+		.opening-section__slider {
+			margin-top: 84px;
+		}
+	}
+
+	@media screen and (min-width: $screen_iphonex) and (max-width: $screen_iphonex + 1) {
+		 .opening-section__slider {
+			margin-top: 84+70px;
+		}
+	}
+
+
 }
 
+
+
+
+// *******
 .about-section {
 	text-align: center;
 
@@ -185,6 +289,10 @@ ul {
 	}
 }
 
+
+
+
+// *******
 .advantages-section {
 
 	.advantages-section__items-list {
@@ -214,20 +322,31 @@ ul {
 		color: rgba($color: $color_dark, $alpha: 0.80);
 		margin: 0;
 	}
+
+	@media screen and (max-width: $screen_md) {
+		.advantages-section__item {
+			padding: 0 10px;
+		}
+	}
+
+	@media screen and (max-width: $screen_sm) {
+		.advantages-section__item {
+			width: size(12);
+			margin-bottom: 28px;
+		}
+	}
 }
 
-.portfolio-section {
 
+
+
+// *******
+.portfolio-section {
+ 
 	.portfolio-section__items-list {
 		text-align: center;
 	}
-
-	.link--def {
-		// display: block;
-		// text-align: center;
-	}
-
-
+ 
 	.portfolio-section__item {
 		width: size(4);
 		margin: 0 15px;
@@ -238,6 +357,7 @@ ul {
 			display: block;
 			text-decoration: none;
 			box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.15);
+			overflow: hidden;
 			
 
 			&:before {
@@ -261,7 +381,7 @@ ul {
 				transform: scale(2);
 				font-style: normal;
 				font-weight: normal;
-				letter-spacing: 1.2em;
+				letter-spacing: 1.5em;
 				width: 100%;
 				text-align: center;
 				z-index: 1;
@@ -287,10 +407,33 @@ ul {
 			@include img-responsive;
 		}
 	}
+
+	 
+
+	@media screen and (max-width: $screen_sm) {
+		.portfolio-section__item {
+			width: size(6);
+			margin-bottom: 28px;
+
+			p {
+				top: 40% !important;
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 
+
+
+// *******
 .brief-section {
 	text-align: center;
 	margin-top: 56px;
 }
+
+
+
+// ---------------------------------
+// PAGE 
+// ---------------------------------

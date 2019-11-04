@@ -13,7 +13,7 @@
 		text-align: center;
 	}
 
-	.items-list {
+	.footer__nav ul {
 		justify-content: center;
 		margin-top: 42px;
 
@@ -65,4 +65,22 @@
 			color: rgba(50, 54, 60, 0.8);
 		}
 	}
+
+
+
+	@media screen and (max-width: $screen_sm) {
+
+ 
+
+		.footer__nav ul {
+			display: block;
+			text-align: center;
+
+			li {
+				margin: 14px 0;
+			}
+		}
+	 
+	}
+
 }

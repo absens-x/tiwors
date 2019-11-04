@@ -3,8 +3,9 @@ header.header
 		.container
 			.header__inner
 				button.btn.btn--hamburger <span></span>
-				a.header__logo
-					img(src="img/svg/logo-icon.svg", alt="tiwors")
+				a.header__logo(href="/")
+					+svg("", "logo_icon")(class="icon icon--svg-logo-icon")
+					//- img(src="img/svg/logo-icon.svg", alt="tiwors")
 				.header__right
 					p.header__phone-number <i></i><span>8(906) 777-66-06</span>
-					button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
+					button.btn.btn--primary.bg--gd-orange <i>+</i><span>Оставить заявку</span>

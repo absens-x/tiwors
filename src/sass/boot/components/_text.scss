@@ -38,11 +38,6 @@
             }
 
         }
-
-        
-
-       
-
       
     }
 
@@ -66,5 +61,15 @@
 	font-weight: normal;
 	line-height: 150%;
 	margin: 0;
-	text-align: center;
+    text-align: center;
+    margin: 28px 0;
+}
+
+
+// ADAPTIVE
+
+@media screen and (max-width: $screen_sm) {
+    .heading--primary {
+        font-size: 22px !important;
+    }
 }

@@ -121,6 +121,7 @@ module.exports = {
         // ---------------------------------------------------------------------------------------
         // new HtmlWebpackPlugin(generatePugTemplate('icons')),
         new HtmlWebpackPlugin(generatePugTemplate('index')),
+        new HtmlWebpackPlugin(generatePugTemplate('about')),
         // ---------------------------------------------------------------------------------------
 
         new CopyWebpackPlugin([
@@ -132,13 +133,6 @@ module.exports = {
         ),
     ]
 }
-
-
-
-
-
-
-
 
 
 function generatePugTemplate(template, filename = template) {

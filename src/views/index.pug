@@ -8,43 +8,66 @@ html(lang="en")
 
 		//- HOME PAGE
 		.page.page--home
-
+			//- --------------------------------------------------------------
+			section.opening-section
+				.opening-section__wrap
+					.container
+						.opening-section__inner
+							.opening-section__slider
+								
+								ul.slider__items-list
+									li.slider__item.entity-is-active
+										.slider__animation-box
+											div.animation-box__layer-1
+												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
+											div.animation-box__layer-2
+												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
+											div.animation-box__layer-3
+												i
+													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
+										.slider__slogan
+											p Готовые решения для <span>вашего бизнеса<span/>!
+									li.slider__item
+										.slider__animation-box
+											div.animation-box__layer-1
+												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
+											div.animation-box__layer-2
+												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
+											div.animation-box__layer-3
+												i
+													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
+										.slider__slogan
+											p Готовые решения для <span>вашего бизнеса<span/>!
+									li.slider__item
+										.slider__animation-box
+											div.animation-box__layer-1
+												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
+											div.animation-box__layer-2
+												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
+											div.animation-box__layer-3
+												i
+													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
+										.slider__slogan
+											p Готовые решения для <span>вашего бизнеса<span/>!
+								
+								ul.slider__controls.row
+									li.on
+										button.btn.btn--slider-control <i></i>
+									li
+										button.btn.btn--slider-control <i></i><i></i>
+									li
+										button.btn.btn--slider-control <i></i><i></i><i></i>
+			
 			main.content
 
-				//- --------------------------------------------------------------
-				section.opening-section
-					.opening-section__wrap
-						.container
-							.opening-section__inner
-								.opening-section__slider
-									
-									ul.slider__items-list
-										li.slider__item
-											.slider__animation-box
-												div.animation-box__layer-1
-													+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
-												div.animation-box__layer-2
-													+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
-												div.animation-box__layer-3
-													i
-														+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
-											.slider__slogan
-												p Готовые решения для <span>вашего бизнеса<span/>!
-									
-									ul.slider__controls.row
-										li.on
-											button.btn.btn--slider-control <i></i>
-										li
-											button.btn.btn--slider-control <i></i><i></i>
-										li
-											button.btn.btn--slider-control <i></i><i></i><i></i>
 				
 				//- --------------------------------------------------------------
 				section.about-section
 					.container
 						h2.heading.heading--primary <span>Кто мы</span>
 						.logo.logo--origin
-							img(src="img/svg/logo-full.svg")
+							+svg("", "logo_main")(class="icon icon--svg-logo-main")
+							//- img(src="img/svg/logo-full.svg")
 						.about-section__desc
 							p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы.. Хотя само их существование приносит несомненную пользу обществу
 				

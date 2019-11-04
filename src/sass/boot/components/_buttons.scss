@@ -23,7 +23,13 @@
 		overflow: hidden;
 		transition: 0.2s ease-in-out;
 		
-		span {
+		i {
+			display: none;
+			font-style: normal;
+			font-weight: 800;
+		}
+		
+		span, i {
 			@include center-1;
 			top: 10px;
 			z-index: 1;
@@ -57,9 +63,6 @@
 		
 	}
 
-
-	
-
 	&.btn--hamburger {
 		width: 26px;
 		height: 18px;
@@ -74,7 +77,8 @@
 		 
 		}
 
-	 
+		
+		
 		span {
 			display: block;
 			height: 2px;
@@ -94,3 +98,7 @@
 	}
 	 
 }
+
+
+
+ 

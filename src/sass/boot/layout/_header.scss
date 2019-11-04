@@ -5,7 +5,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 1000;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(255, 255, 255, 0.92);
 	}
 
 	.header__inner {
@@ -30,6 +30,7 @@
 	}
 
 	.header__phone-number {
+		
 		font: 14px $font_2;
 		span {opacity: 0.5;}
 		&:hover span {
@@ -61,4 +62,36 @@
 	.btn--primary {
 		margin-left: 20px;
 	}
+
+	
+
+
+	@media screen and (max-width: $screen_md) {
+		.header__right .btn--primary {
+			width: 36px;
+			border-width: 1.5px;
+			span {
+				display: none;
+			}
+			i {
+				display: block;
+			}
+		}
+	}
+
+	@media screen and (max-width: $screen_sm) {
+
+		.header__inner {
+			height: 70px !important;
+		}
+
+		
+		.header__phone-number {
+			display: none;
+		}
+		
+	}
+
+
 }
+
