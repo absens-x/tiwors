@@ -2,7 +2,7 @@
 
 .heading {
 
-    &.heading--primary {
+    &.heading--1 {
         text-align: center;
         font: 34px $font_2;
         font-weight: bold;
@@ -41,7 +41,7 @@
       
     }
 
-    &.heading--secondary {
+    &.heading--2 {
         font-style: normal;
         font-weight: 800;
         font-size: 22px;
@@ -50,6 +50,22 @@
         letter-spacing: 0.1em;
         color: $color_blue;
         margin: 28px 0;
+    }
+
+    &.heading--3 {
+        font: 22px $font_2;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 56px 0 42px 0;
+
+        b {
+            font-weight: normal;
+            color: $color_orange;
+        }
     }
 }
 

@@ -7,7 +7,7 @@ module.exports = {
 	plugins: [
 		require('autoprefixer'),
 		require('cssnano'),
-		require('lipemat-css-mqpacker')({
+		require('@lipemat/css-mqpacker')({
 			sort: true,
 			preset: [
 				'default', {
