@@ -122,6 +122,10 @@ module.exports = {
         // new HtmlWebpackPlugin(generatePugTemplate('icons')),
         new HtmlWebpackPlugin(generatePugTemplate('index')),
         new HtmlWebpackPlugin(generatePugTemplate('about')),
+        new HtmlWebpackPlugin(generatePugTemplate('contacts')),
+        new HtmlWebpackPlugin(generatePugTemplate('services')),
+        new HtmlWebpackPlugin(generatePugTemplate('portfolio')),
+        new HtmlWebpackPlugin(generatePugTemplate('portfolio_work')),
         // ---------------------------------------------------------------------------------------
 
         new CopyWebpackPlugin([

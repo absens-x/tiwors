@@ -40,6 +40,11 @@ ul {
 	margin-top: 0;
 }
 
+
+
+
+
+
 .home-opening {
 
 	.home-opening__wrap {
@@ -439,6 +444,9 @@ ul {
 // ---------------------------------
 
 
+
+
+// *******
 .about-team {
 
 	.about-team__member {
@@ -478,7 +486,7 @@ ul {
 
 		.member__photo {
 			position: relative;
-			display: inline-block;
+			// display: inline-block;
 			border-radius: 6px;
 			overflow: hidden;
 
@@ -523,8 +531,9 @@ ul {
 				margin: 0;
 
 				&:first-child {
+					font: 1rem $font_2;
 					font-style: normal;
-					font-weight: 800;
+					font-weight: 500;
 					text-transform: uppercase;
 					letter-spacing: 0.05em;
 					opacity: 0.8;
@@ -572,4 +581,57 @@ ul {
 			}
 		}
 	}
+
+	@media screen and (max-width: $screen_md) {
+		.about-team__member {
+			width: size(6);
+			margin-bottom: 28px;
+			 
+		}
+	}
+
+	@media screen and (max-width: $screen_sm) {
+		.about-team__member {
+			width: size(12);
+	 
+
+			p {
+				top: 40% !important;
+				font-size: 14px;
+			}
+		}
+	}
+
+	
 }
+
+
+
+
+// *******
+.about__social-links {
+	ul {
+		justify-content: center;
+	}
+	.link--social-item {
+		margin:  0 15px;
+		border: 1px solid $color_blue;
+		transform: scale(1.4);
+		&:hover {
+			background: $color_blue !important;
+		}
+		.icon {
+			fill: $color_blue;
+		}
+	}
+}
+
+
+
+
+// *******
+.about-contacts {
+	text-align: center;
+	margin-top: 56px ;
+}
+

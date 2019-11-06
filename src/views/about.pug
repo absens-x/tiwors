@@ -82,7 +82,25 @@ html(lang="en")
 				section.about-social-links
 					.container
 						h3.heading.heading--3 <span><b>Мы</b> в соцсетях</span>
+						.about__social-links
+							ul.row
+								li
+									a(href="#" class="link link--social-item")
+										+svg("", "icon_social-vk")(class="icon icon--svg-social-vk")
+								li
+									a(href="#" class="link link--social-item")
+										+svg("", "icon_social-ig")(class="icon icon--svg-social-ig")
+								li
+									a(href="#" class="link link--social-item")
+										+svg("", "icon_social-tg")(class="icon icon--svg-social-tg")
+								li
+									a(href="#" class="link link--social-item")
+										+svg("", "icon_social-fb")(class="icon icon--svg-social-fb")
 
+				section.about-contacts
+					.container
+						h3.heading.heading--secondary Связаться с нами
+						a(href="" class="btn btn--2 bg--gd-blue") <span>Оставить заявку</span>
 
 
 		include boot/layouts/_footer.pug

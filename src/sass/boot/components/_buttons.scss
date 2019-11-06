@@ -12,7 +12,7 @@
 
 
  
-	&.btn--primary {
+	&.btn--primary, &.btn--2 {
 		position: relative;
 		width: 172px;
 		border: 1px solid $color_dark;
@@ -62,6 +62,19 @@
 		}
 		
 	}
+
+	&.btn--2 {
+		&:hover {
+			border-color: $color_blue_1 !important;
+			box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
+			
+		}
+	}
+
+
+
+
+
 
 	&.btn--hamburger {
 		width: 26px;
