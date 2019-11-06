@@ -28,13 +28,13 @@ ul {
 }
 
 
-// ---------------------------------
-// PAGE HOME
-// ---------------------------------
+// * ---------------------------------
+// * PAGE HOME
+// * ---------------------------------
 
 
 
-// *******
+
 
 .page--home .content {
 	margin-top: 0;
@@ -43,8 +43,7 @@ ul {
 
 
 
-
-
+// *******
 .home-opening {
 
 	.home-opening__wrap {
@@ -439,9 +438,15 @@ ul {
 
 
 
-// ---------------------------------
-// PAGE ABOUT
-// ---------------------------------
+
+
+
+
+
+
+// * ---------------------------------
+// * PAGE ABOUT
+// * ---------------------------------
 
 
 
@@ -635,3 +640,58 @@ ul {
 	margin-top: 56px ;
 }
 
+
+
+
+
+
+
+// * ---------------------------------
+// * PAGE CONTACTS
+// * ---------------------------------
+
+
+
+
+// *******
+.contacts-info {
+	text-align: center;
+
+	.contacts-info__logo {
+		opacity: 0.3;
+	}
+
+	.contacts-info__data {
+		p {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+		
+			b {
+				color: $color_orange;
+				font-weight: 800;
+			}
+
+			&:nth-child(2) a {
+				color: $color_blue_1;
+				font-family: $font_2;
+			}
+
+			&:nth-child(3) {
+				font-family: $font_2;
+			}
+		}
+
+		
+
+
+	}
+}
+
+
+
+
+// *******
+.contacts-form {
+	margin-top: 56px;
+}

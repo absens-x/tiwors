@@ -42,13 +42,13 @@
     }
 
     &.heading--2 {
+        font: 22px $font_2;
         font-style: normal;
-        font-weight: 800;
-        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
         line-height: 130%;
         text-align: center;
         letter-spacing: 0.1em;
-        color: $color_blue;
         margin: 28px 0;
     }
 
