@@ -10,16 +10,35 @@
 		}
 	}
 
-	&.field--user-info {
+	&.field--1 {
+		position: relative;
+		display: block;
+		text-align: center;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 0;
+			height: 1px;
+			background: $color_orange;
+		}
+		
+		.field__placeholder {
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			opacity: 0.5;
+		}
+
 		input {
-			background: none;
-			border: none;
+			display: block;
 			width: 100%;
-			font-size: 24px;
-			color: #fff;
-			border-bottom: 1px solid #fff;
-			opacity: 0.1;
-			padding-bottom: 15px;
+			border: none;
+			border-bottom: 1px solid rgba($color: $color_dark, $alpha: 0.26);
 		}
 		
 
