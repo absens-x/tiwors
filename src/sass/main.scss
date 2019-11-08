@@ -670,7 +670,7 @@ ul {
 			font-size: 22px;
 		
 			b {
-				color: $color_orange;
+				color: $color_blue;
 				font-weight: 800;
 			}
 
@@ -695,9 +695,90 @@ ul {
 
 // *******
 .contacts-form {
+	text-align: center;
 	margin-top: 56px;
+
+	.contacts-form__form {
+		width: size(6);
+		margin: auto;
+	}
 
 	.field {
 		margin-top: 35px;
+	}
+
+	.btn--2 {
+		margin-top: 56px;
+	}
+
+	@media screen and (max-width: $screen_sm) {
+		 .contacts-form__form {
+			width: size(12);
+		}
+	}
+}
+
+
+
+
+// *******
+.contacts-map {
+	.contacts-map__wrap {
+ 
+		margin-top: 84px;
+		margin-bottom: -84px;
+		filter: grayscale(1) invert(1) brightness(80%);
+		transition: 0.3s filter;
+
+		&:hover {
+			filter: none;
+		}
+
+		 
+	}
+}
+
+
+
+
+
+
+
+// * ---------------------------------
+// * PAGE SERVICES
+// * ---------------------------------
+
+
+
+
+// *******
+.services-list {
+	margin-top: 56px;
+	.service-item {
+		width: size(6);
+		margin: auto;
+		text-align: center;
+		margin-bottom: 56px;
+		padding-bottom: 56px;
+		border-bottom: 1px solid rgba($color: $color_dark, $alpha: 0.26);
+		&:last-child {border: none;}
+	}
+
+	.service-item__title {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 34px;
+		letter-spacing: 0.05em;
+		margin-top: 42px;
+		margin-bottom: 14px;
+		color: $color_blue;
+	}
+
+	ul {
+		li {
+			font-size: 22px;
+			margin-top: 14px;
+			margin-bottom: 0;
+		}
 	}
 }

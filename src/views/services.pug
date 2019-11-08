@@ -7,133 +7,51 @@ html(lang="en")
 		
 
 		//- HOME PAGE
-		.page.page--home
-			//- --------------------------------------------------------------
-			section.home-opening
-				.home-opening__wrap
-					.container
-						.home-opening__inner
-							.home-opening__slider
-								
-								ul.slider__items-list
-									li.slider__item.entity-is-active
-										.slider__animation-box
-											div.animation-box__layer-1
-												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
-											div.animation-box__layer-2
-												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
-											div.animation-box__layer-3
-												i
-													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
-										.slider__slogan
-											p Готовые решения для <span>вашего бизнеса<span/>!
-									li.slider__item
-										.slider__animation-box
-											div.animation-box__layer-1
-												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
-											div.animation-box__layer-2
-												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
-											div.animation-box__layer-3
-												i
-													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
-										.slider__slogan
-											p Готовые решения для <span>вашего бизнеса<span/>!
-									li.slider__item
-										.slider__animation-box
-											div.animation-box__layer-1
-												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
-											div.animation-box__layer-2
-												+svg("", "icon_opening-1")(class="icon icon--svg-opening-1")
-											div.animation-box__layer-3
-												i
-													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
-										.slider__slogan
-											p Готовые решения для <span>вашего бизнеса<span/>!
-								
-								ul.slider__controls.row
-									li.on
-										button.btn.btn--slider-control <i></i>
-									li
-										button.btn.btn--slider-control <i></i><i></i>
-									li
-										button.btn.btn--slider-control <i></i><i></i><i></i>
-			
+		.page.page--services
+
 			main.content
+				h1.heading.heading--1 <span>Услуги</span>
+				
+				//- --------------------------------------------------------------
+				section.services-description
+					.container
+						h2.heading.heading--2 Что мы можем вам предложить?
+						p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы.. Хотя само их существование приносит несомненную пользу обществу
+				
+				section.services-list
+					.container
+						.service-item
+							span.icon.icon--service
+								+svg("","icon_service-1")(class="icon icon--svg-service-1")
+							p.service-item__title Дизайн
+							ul
+								li Логотип
+								li Фирменный стиль
+								li Лендинг
+								li Флаера
+						.service-item
+							span.icon.icon--service
+								+svg("","icon_service-2")(class="icon icon--svg-service-2")
+							p.service-item__title Веб-разработка
+							ul
+								li Логотип
+								li Фирменный стиль
+								li Лендинг
+								li Флаера
+						.service-item
+							span.icon.icon--service
+								+svg("","icon_service-3")(class="icon icon--svg-service-3")
+							p.service-item__title Копирайтинг
+							ul
+								li Логотип
+								li Фирменный стиль
+								li Лендинг
+								li Флаера
 
-				
-				//- --------------------------------------------------------------
-				section.home-about
-					.container
-						h1.heading.heading--1 <span>Кто мы</span>
-						.logo.logo--origin
-							+svg("", "logo_main")(class="icon icon--svg-logo-main")
-							//- img(src="img/svg/logo-full.svg")
-						.home-about__desc
-							p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников, современные исследования превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы.. Хотя само их существование приносит несомненную пользу обществу
-				
-				
-				//- --------------------------------------------------------------
-				section.home-advantages
-					.container
-						.home-advantages__items-list
-							.row
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
-											
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
-											
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
-				
-				//- --------------------------------------------------------------
-				section.home-portfolio
-					.container
-						h1.heading.heading--1 <span>Наши работы</span>
+					
 						
-						.home-portfolio__items-list
-							.row
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work1.jpg", alt="")
-										p Nissa
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work2.jpg", alt="")
-										p Idaliano
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work3.jpg", alt="")
-										p Hedi
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work1.jpg", alt="")
-										p Nissa
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work2.jpg", alt="")
-										p Idaliano
-								.home-portfolio__item
-									a(href="#")
-										img(src="img/work3.jpg", alt="")
-										p Hedi
-							a( class="link link--def" href="#") Другие проекты
 
-				//- --------------------------------------------------------------
-				section.home-brief
-					.container
-						h3.heading.heading--secondary Готовы обсудить проект?
-						button.btn.btn--primary.bg--gd-orange <span>Оставить заявку</span>
-		
+
 		include boot/layouts/_footer.pug
 		
 

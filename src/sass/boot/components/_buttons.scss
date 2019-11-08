@@ -67,9 +67,30 @@
 		&:hover {
 			border-color: $color_blue_1 !important;
 			box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
-			
+		}
+
+		&_inverse {
+			color: #fff;
+			border-color: $color_blue_1;
+			&:after {
+				opacity: 0;
+				width: 0;
+				border-radius: 100%;
+			}
+
+			&:hover {
+			 
+				color: $color_blue_1;
+			}
+			&:hover::after {
+				opacity: 1;
+				width: 100%;
+				border-radius: 0;
+			}
 		}
 	}
+
+
 
 
 
