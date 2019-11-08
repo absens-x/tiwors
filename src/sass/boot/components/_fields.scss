@@ -13,7 +13,21 @@
 	&.field--1 {
 		position: relative;
 		display: block;
+		height: 39px;
 		text-align: center;
+
+		&.field--1_focused {
+
+			.field__placeholder {
+				top: -22px;
+				transform: scale(0.8);
+				opacity: 1;
+			}
+			
+			&:after {width: 100%;}
+			
+			input {border-color: #fff;}
+		}
 
 		&:after {
 			content: "";
@@ -26,19 +40,34 @@
 			width: 0;
 			height: 1px;
 			background: $color_orange;
+			transition: 0.3s width;
 		}
+
 		
 		.field__placeholder {
+			display: block;
+			position: absolute;
+			width: 100%;
+			top: 0;
 			letter-spacing: 0.1em;
 			text-transform: uppercase;
 			opacity: 0.5;
+			z-index: 0;
+			transition: 0.3s;
 		}
 
 		input {
+			position: absolute;
 			display: block;
 			width: 100%;
+			background: transparent;
 			border: none;
+			text-align: center;
+			padding-top: 7px;
+			padding-bottom: 18px;
 			border-bottom: 1px solid rgba($color: $color_dark, $alpha: 0.26);
+			z-index: 1;
+			transition: 0.3s border-bottom;
 		}
 		
 

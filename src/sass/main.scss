@@ -16,9 +16,7 @@ ul {
 	margin: 0;
 }
 
-.entity-is-active {
-	display: block !important;
-}
+
 
 
 .content {
@@ -66,6 +64,10 @@ ul {
 		position: absolute;
 		left: 0;
 		right: 0;
+
+		&.slider__item_active {
+			display: block;
+		}
 	}
 
 	.slider__animation-box {
@@ -694,4 +696,8 @@ ul {
 // *******
 .contacts-form {
 	margin-top: 56px;
+
+	.field {
+		margin-top: 35px;
+	}
 }
