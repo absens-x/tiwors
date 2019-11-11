@@ -781,4 +781,13 @@ ul {
 			margin-bottom: 0;
 		}
 	}
+
+	@media screen and (max-width: $screen_sm) {
+		.service-item {
+			width: size(12);
+		}
+		.service-item__title {
+			font-size: 26px;
+		}
+	}
 }
