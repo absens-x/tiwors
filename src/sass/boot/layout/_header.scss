@@ -59,7 +59,7 @@
 		
 	}
 
-	.btn--primary {
+	.header__btn-form {
 		margin-left: 20px;
 	}
 
@@ -67,15 +67,18 @@
 
 
 	@media screen and (max-width: $screen_md) {
-		.header__right .btn--primary {
+		 
+		.header__btn-form {
 			width: 36px;
-			border-width: 1.5px;
+			border-width: 1px;
+			border-radius: 4px;
+
 			span {
 				display: none;
 			}
-			i {
-				display: block;
-			}
+
+			&:before {display: block;}
+			
 		}
 	}
 

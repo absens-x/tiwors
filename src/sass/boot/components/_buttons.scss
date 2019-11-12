@@ -12,7 +12,9 @@
 
 
  
-	&.btn--primary, &.btn--2 {
+	&.btn--1_theme_dark,
+	&.btn--1_theme_blue,
+	&.btn--1_theme_blue_inverse {
 		position: relative;
 		width: 172px;
 		border: 1px solid $color_dark;
@@ -23,16 +25,25 @@
 		overflow: hidden;
 		transition: 0.2s ease-in-out;
 		
-		i {
+		/* i {
 			display: none;
 			font-style: normal;
 			font-weight: 800;
-		}
+		} */
 		
 		span, i {
 			@include center-1;
 			top: 10px;
 			z-index: 1;
+		}
+
+		&:before {
+			@include center-1;
+			top: 8px;
+			content: "\279C";
+			display: none;
+			border-radius: 100%;
+
 		}
 
 		&:after {
@@ -60,13 +71,22 @@
 			border-radius: 100%;
 			border-color: $color_orange !important;
 		}
+
 		
 	}
 
-	&.btn--2 {
+	
+
+
+
+	
+	&.btn--1_theme_blue {
+		color: $color_blue_1;
+		border: 1px solid $color_blue_1;	
 		&:hover {
 			border-color: $color_blue_1 !important;
 			box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
+			color: #fff;
 		}
 
 		&_inverse {
@@ -79,9 +99,11 @@
 			}
 
 			&:hover {
-			 
+				border-color: $color_blue_1 !important;
+				box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
 				color: $color_blue_1;
 			}
+
 			&:hover::after {
 				opacity: 1;
 				width: 100%;
@@ -92,7 +114,42 @@
 
 
 
+	&.btn--tag_theme_blue {
+		position: relative;
+		font-style: normal;
+		font-weight: bold;
+		border: 1px solid $color_dark;
+		text-transform: uppercase;
+		padding: 0 30px;
+		height: 36px;
+		border-radius: 30px;
+		overflow: hidden;
+		transition: 0.2s ease-in-out;
+		border: 1px solid $color_blue_1;
 
+		&:before {
+			display: inline;
+			content: "#";
+			margin-right: 2px;
+			color: rgba($color: $color_dark, $alpha: 0.4);
+		}
+
+		span {
+			@include center-1;
+			top: 10px;
+			z-index: 1;
+			
+		}
+
+		&.btn--tag_active {
+			background: $color_gd_blue;
+			color: #fff;
+
+			&:before {
+				color: rgba($color: #fff, $alpha: 0.4);
+			}
+		}
+	}
 
 
 
