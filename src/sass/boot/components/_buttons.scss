@@ -35,6 +35,9 @@
 			@include center-1;
 			top: 10px;
 			z-index: 1;
+			color: $color_dark;
+			transition: 0.2s ease-in-out;
+
 		}
 
 		&:before {
@@ -63,6 +66,7 @@
 			color: #fff;
 			border-color: $color_orange;
 			box-shadow: 0px 14px 30px rgba(230, 93, 26, 0.15);
+			span {color: #fff;}
 		}
 		
 		&:hover:after {
@@ -82,7 +86,10 @@
 	
 	&.btn--1_theme_blue {
 		color: $color_blue_1;
-		border: 1px solid $color_blue_1;	
+		border: 1px solid $color_blue_1;
+
+		span {color: inherit;}
+
 		&:hover {
 			border-color: $color_blue_1 !important;
 			box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
@@ -92,6 +99,8 @@
 		&_inverse {
 			color: #fff;
 			border-color: $color_blue_1;
+			span {color: inherit;}
+
 			&:after {
 				opacity: 0;
 				width: 0;
@@ -102,6 +111,7 @@
 				border-color: $color_blue_1 !important;
 				box-shadow: 0px 14px 30px rgba(33, 80, 152, 0.15);
 				color: $color_blue_1;
+				span {color: inherit;}
 			}
 
 			&:hover::after {
@@ -186,6 +196,40 @@
 			height: 2px;
 		}
 	 
+	}
+
+
+	&.btn--slider-control  {
+		position: relative;
+		background: #fff;
+		width: 42px;
+		height: 42px;
+		border: 1px solid $color_dark;
+		border-radius: 50px;
+		opacity: 0.9;
+		overflow: hidden;
+		transition: 0.3s;
+
+		&:hover {
+			transform: rotate(360deg);
+			background: $color_blue_1 !important;
+			border-color: $color_blue_1;
+
+			i {
+				background-color: #fff;
+			}
+
+				
+		}
+
+		i {
+			position: absolute;
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			background: $color_dark;
+			border-radius: 7px;
+		}
 	}
 	 
 }

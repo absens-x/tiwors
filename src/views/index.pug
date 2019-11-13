@@ -13,11 +13,12 @@ html(lang="en")
 				.home-opening__wrap
 					.container
 						.home-opening__inner
-							.home-opening__slider
+							.home-opening__slider.slider
 								
 								ul.slider__items-list
+
 									li.slider__item.slider__item_active
-										.slider__animation-box
+										.slider__animation-box.animation-box
 											div.animation-box__layer-1
 												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
 											div.animation-box__layer-2
@@ -27,8 +28,9 @@ html(lang="en")
 													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
 										.slider__slogan
 											p Готовые решения для <span>вашего бизнеса<span/>!
+
 									li.slider__item
-										.slider__animation-box
+										.slider__animation-box.animation-box
 											div.animation-box__layer-1
 												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
 											div.animation-box__layer-2
@@ -38,8 +40,9 @@ html(lang="en")
 													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
 										.slider__slogan
 											p Готовые решения для <span>вашего бизнеса<span/>!
+
 									li.slider__item
-										.slider__animation-box
+										.slider__animation-box.animation-box
 											div.animation-box__layer-1
 												+svg("", "icon_opening-b-text-1")(class="icon icon--svg-opening-b-text-1")
 											div.animation-box__layer-2
@@ -49,13 +52,14 @@ html(lang="en")
 													+svg("", "icon_opening-f-text-1")(class="icon icon--svg-opening-f-text-1")
 										.slider__slogan
 											p Готовые решения для <span>вашего бизнеса<span/>!
+
 								
-								ul.slider__controls.row
-									li.on
+								ul.slider__controls.slider-controls.row
+									li.slider-controls__item.slider-controls__item--active
 										button.btn.btn--slider-control <i></i>
-									li
+									li.slider-controls__item
 										button.btn.btn--slider-control <i></i><i></i>
-									li
+									li.slider-controls__item
 										button.btn.btn--slider-control <i></i><i></i><i></i>
 			
 			main.content
@@ -77,24 +81,28 @@ html(lang="en")
 					.container
 						.home-advantages__items-list
 							.row
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+								.home-advantages__item.advantage-item
+									.advantage-item__icon
+										.icon.icon--adv-1
+											img(src="img/svg/icon-adv-1.svg", alt="")
+									p.advantage-item__title Этот слоган говорит о выгоде
+									p.prgh.prgh--def.advantage-item__desc Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
 											
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+								.home-advantages__item.advantage-item
+									.advantage-item__icon
+										.icon.icon--adv-1
+											img(src="img/svg/icon-adv-1.svg", alt="")
+									p.advantage-item__title Этот слоган говорит о выгоде
+									p.prgh.prgh--def.advantage-item__desc Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
 											
-								.home-advantages__item
-									.icon.icon--adv-1
-										img(src="img/svg/icon-adv-1.svg", alt="")
-									p.home-advantages__adv Этот слоган говорит о выгоде
-									p.prgh.prgh--def Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
-				
+								.home-advantages__item.advantage-item
+									.advantage-item__icon
+										.icon.icon--adv-1
+											img(src="img/svg/icon-adv-1.svg", alt="")
+									p.advantage-item__title Этот слоган говорит о выгоде
+									p.prgh.prgh--def.advantage-item__desc Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников
+											
+							
 				//- --------------------------------------------------------------
 				section.home-portfolio
 					.container

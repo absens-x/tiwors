@@ -24,7 +24,7 @@
 		height: 42px;
 	}
 
-	.header__right {
+	.header__right-side {
 		display: flex;
 		align-items: center;
 	}
@@ -59,7 +59,7 @@
 		
 	}
 
-	.header__btn-form {
+	.header__btn-brief-form {
 		margin-left: 20px;
 	}
 
@@ -68,7 +68,7 @@
 
 	@media screen and (max-width: $screen_md) {
 		 
-		.header__btn-form {
+		.header__btn-brief-form {
 			width: 36px;
 			border-width: 1px;
 			border-radius: 4px;
@@ -88,7 +88,6 @@
 			height: 70px !important;
 		}
 
-		
 		.header__phone-number {
 			display: none;
 		}

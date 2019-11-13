@@ -1,31 +1,32 @@
 footer.footer
 	.container
 		.footer__wrap
-			.footer__decorate-layer
+			.footer__decorate-shadow-layer
 				+svg("", "layer_decorate-shadow")(class="layer layer--decorate-shadow")
 				
-			nav.footer__nav
-				ul.row
-					li
+			nav.nav.footer__nav
+				ul.nav__list.row
+					li.nav__item
 						a(href="#") Портфолио
-					li
+					li.nav__item
 						a(href="#") О нас
-					li
+					li.nav__item
 						a(href="#") Услуги
-					li
+					li.nav__item
 						a(href="#") Контакты
-			.footer__social-links
+						
+			.social-links.footer__social-links
 				ul.row
-					li
+					li.social-links__item
 						a(href="#" class="link link--social-item")
 							+svg("", "icon_social-vk")(class="icon icon--svg-social-vk")
-					li
+					li.social-links__item
 						a(href="#" class="link link--social-item")
 							+svg("", "icon_social-ig")(class="icon icon--svg-social-ig")
-					li
+					li.social-links__item
 						a(href="#" class="link link--social-item")
 							+svg("", "icon_social-tg")(class="icon icon--svg-social-tg")
-					li
+					li.social-links__item
 						a(href="#" class="link link--social-item")
 							+svg("", "icon_social-fb")(class="icon icon--svg-social-fb")
 
