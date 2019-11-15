@@ -137,6 +137,15 @@
 		transition: 0.2s ease-in-out;
 		border: 1px solid $color_blue_1;
 
+		&:hover {
+			background: $color_gd_blue;
+			color: #fff;
+
+			&:before {
+				color: rgba($color: #fff, $alpha: 0.4);
+			}
+		}
+
 		&:before {
 			display: inline;
 			content: "#";
