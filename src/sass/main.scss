@@ -803,9 +803,10 @@ ul {
 				opacity: 1;
 				top: 56px;
 			}
+			
 
 			.portfolio-item__preview img {
-				filter: grayscale(1);
+				filter:  blur(8px);
 			}
 
 		}
@@ -820,6 +821,7 @@ ul {
 		position: relative;
 		// display: inline-block;
 		overflow: hidden;
+		height: 448px;
 		border-radius: 8px;
 		
 
@@ -837,7 +839,7 @@ ul {
 		}
 
 		img {
-			@include img-responsive;
+			// @include img-responsive;
 		}
 	}
 
@@ -857,7 +859,7 @@ ul {
 	.portfolio-item__name {
 		font-size: 22px;
 		font-style: normal;
-		font-weight: 800;
+		font-weight: normal;
 		font-size: 22px;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
@@ -903,3 +905,77 @@ ul {
 		}
 	}
 }
+
+
+
+
+
+
+// * ---------------------------------
+// * PAGE PORTFOLIO CASE
+// * ---------------------------------
+
+
+
+
+// *******
+
+.case-opening__preview {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+
+	&::after {
+		position: absolute;
+		display: block;
+		content: "";
+		background: linear-gradient(146.3deg, #215098 -0.05%, rgba(33, 80, 152, 0) 100%);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	
+	img {
+		@include img-responsive;
+		filter: blur(8px);
+	}
+}
+
+.case-opening__case-name {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		margin: auto;
+		text-align: center;
+		color: #fff;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 34px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		z-index: 2;
+	}
+
+
+	
+
+
+// *******
+.case-mockup {
+	
+}
+
+.case-mockup__item {
+	text-align: center;
+	margin-top: 84px;
+	
+	img {
+		display: inline;	
+	}
+}
+
