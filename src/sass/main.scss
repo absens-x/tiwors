@@ -840,6 +840,7 @@ ul {
 
 		img {
 			// @include img-responsive;
+			margin-top: -12% ;
 		}
 	}
 
@@ -867,6 +868,7 @@ ul {
 
 
 	@media screen and (max-width: $screen_md) {
+		
 		.portfolio-item {
 			position: relative;
 			color: #fff;
@@ -884,6 +886,11 @@ ul {
 				}
 
 			}
+		}
+
+		.portfolio-item__preview img {
+			margin-left: -10%;
+
 		}
 
 		.portfolio-item__description {
